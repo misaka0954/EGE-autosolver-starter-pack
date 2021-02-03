@@ -26,6 +26,8 @@ public class zadanie_1{
 			if(cells[j][i]==-1){
 			cells[j][i]=cells[i][j];
 			}
+			}else{
+				System.out.println("Cell "+(i+1)+" "+(j+1)+" = "+cells[i][j]);
 			}
 			}
 		}
@@ -57,7 +59,7 @@ public class zadanie_1{
 			}
 			else{
 			if(lines[i][j]==-1){
-			System.out.print("line "+src.charAt(i)+" and "+src.charAt(j)+" = ");
+			System.out.print("line with "+src.charAt(i)+" and "+src.charAt(j)+" = ");
 			lines[i][j]=console.nextInt();
 			if(lines[j][i]==-1){
 			lines[j][i]=lines[i][j];
