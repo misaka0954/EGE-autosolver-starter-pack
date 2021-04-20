@@ -1,6 +1,4 @@
-import java.util.*;
-
-public class Parser{
+public class zadanie_12{
 	static String out="";
 	static String dub="";
 	static int minVal=100;

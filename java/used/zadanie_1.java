@@ -68,7 +68,6 @@ public class zadanie_1{
 			}
 		}
 	}
-
 	s = "/ ";
 	for(int i=0;i<count;i++){
 	s+=src.charAt(i)+" ";
