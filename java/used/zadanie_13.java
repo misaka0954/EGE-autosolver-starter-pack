@@ -25,23 +25,33 @@ public class zadanie_13 {
                 if(next.startsWith("done")){
                     break;
                 }
-                if(next=="")continue;
+                if (next == "") continue;
                 tmp.add(next);
             }
-            for(String id:tmp){
-                for(Cell cell:cells){
-                if(cell.id==Integer.parseInt(id)){c.contains.add(cell);}
+            for (String id : tmp) {
+                for (Cell cell : cells) {
+                    if (cell.id == Integer.parseInt(id)) {
+                        c.contains.add(cell);
+                    }
                 }
             }
             c.contains.size();
         }
-        for(Cell cell:cells){
-            if(cell.id==1){System.out.println(cell.all());
-            for(String str:cell.sign()){
-                System.out.println(str);
-            }
+        System.out.println("target cell");
+        int c = console.nextInt();
+        int out = 0;
+        for (Cell cell : cells) {
+            if (cell.id == 1) {
+                System.out.println(cell.all());
+                for (String str : cell.sign()) {
+                    if (str.contains(c + "")) {
+                        System.out.println(str);
+                        out++;
+                    }
+                }
             }
         }
+        System.out.println("Answer: " + out);
     }
 }
 
