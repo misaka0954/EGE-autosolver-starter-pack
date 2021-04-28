@@ -1,4 +1,3 @@
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -36,7 +35,6 @@ public class zadanie_3 {
         System.out.println();
         System.out.println();
         System.out.println();
-        int maxCS=0;
         people s = p.get(0);
         p.sort((s1,s2)->{if(s.date.before(s2.date)){return 1;}else return -1;});
         s.print(0);
@@ -54,11 +52,9 @@ public class zadanie_3 {
             date=new SimpleDateFormat("dd.MM.yyyy").parse(d);
         }
         public void print(int lvl){
-            String out = "";
+            StringBuilder out = new StringBuilder();
             if(lvl>0){
-                for(int x=0;x<lvl;x++){
-                    out+="      ";
-                }
+                out.append("      ".repeat(lvl));
             }
             String s=" ";
             for(people pe:p){

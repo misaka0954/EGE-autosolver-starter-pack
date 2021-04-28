@@ -22,20 +22,20 @@ public class zadanie_13 {
             }
             while(true) {
                 String next = console.nextLine();
-                if(next.startsWith("done")){
+                if (next.startsWith("done")) {
                     break;
                 }
-                if (next == "") continue;
+                if (next.equals("")) continue;
                 tmp.add(next);
             }
             for (String id : tmp) {
                 for (Cell cell : cells) {
                     if (cell.id == Integer.parseInt(id)) {
+                        assert c != null;
                         c.contains.add(cell);
                     }
                 }
             }
-            c.contains.size();
         }
         System.out.println("target cell");
         int c = console.nextInt();
@@ -75,7 +75,7 @@ class Cell{
         return rtn;
     }
     public ArrayList<String> sign(){
-        ArrayList<String> rtn=new ArrayList();
+        ArrayList<String> rtn = new ArrayList<>();
         if(contains.size()==0){
             String s = "|"+id+"|";
             rtn.add(s);

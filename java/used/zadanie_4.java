@@ -18,7 +18,7 @@ public class zadanie_4 {
         while(listed.size()>0){
         finded.add(find(b, listed.get(0), listed));
         }
-        finded.forEach(d->System.out.println(d));
+        finded.forEach(System.out::println);
     }
 
     public static int contains(String a,ArrayList<String> s){
