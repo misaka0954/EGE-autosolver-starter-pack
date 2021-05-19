@@ -36,7 +36,11 @@ public class zadanie_3 {
         System.out.println();
         System.out.println();
         people s = p.get(0);
-        p.sort((s1,s2)->{if(s.date.before(s2.date)){return 1;}else return -1;});
+        p.sort((s1, s2) -> {
+            if (s1.date.before(s2.date)) {
+                return 1;
+            } else return -1;
+        });
         s.print(0);
     }
     public static class people{

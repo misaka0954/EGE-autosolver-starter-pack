@@ -12,6 +12,7 @@ public class zadanie_14 {
             case "*" -> a = Action.umn;
             case "/" -> a = Action.del;
         }
+
         System.out.println(input);
         BigInteger cringed = new BigInteger(console.nextLine(), Integer.parseInt(console.nextLine()));
         int answer = 0;
